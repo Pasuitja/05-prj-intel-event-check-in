@@ -36,7 +36,7 @@
     </div>
     <div class="container">
       <!-- Feedback message -->
-      <p id="greeting"></p>
+      <p id="greeting" role="status" aria-live="polite"></p>
 
       <!-- Check-in form -->
       <form class="check-in" id="checkInForm">
@@ -80,6 +80,13 @@
             <span class="team-count" id="powerCount">0</span>
           </div>
         </div>
+      </div>
+
+      <!-- Attendee list (LevelUp) -->
+      <div class="attendee-section">
+        <h3>Attendee List</h3>
+        <p id="emptyList" class="empty-list">No one has checked in yet.</p>
+        <ul id="attendeeList" class="attendee-list"></ul>
       </div>
     </div>
 
